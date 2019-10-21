@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>diabetes</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <form id="formulario" class="needs-validation" novalidate>
+                    <div class="form-group">
+                        <label for="custom-control">NumTimesPrg</label>
+                        <input type="number" step="0.001" id="customControlValidation1" class="form-control" name="NumTimesPrg" placeholder="3.45" required>
+                        <div class="invalid-feedback">No valido!</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="custom-control">PlGlcConc</label>
+                        <input type="number" step="0.001" id="customControlValidation2" class="form-control" name="PlGlcConc" placeholder="4.12" required>
+                        <div class="invalid-feedback">No valido!</div>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                            <label for="custom-control">BloodP</label>
+                            <input type="number" step="0.001" id="customControlValidation3" class="form-control" name="BloodP" placeholder="4.12" required>
+                            <div class="invalid-feedback">No valido!</div>
+                    </div>
+                    <div class="form-group">
+                            <label for="custom-control">SkinThick</label>
+                            <input type="number" step="0.001" id="customControlValidation4" class="form-control" name="SkinThick" placeholder="4.12" required>
+                            <div class="invalid-feedback">No valido!</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="custom-control">TwoHourSerIns</label>
+                        <input type="number" step="0.001" id="customControlValidation4" class="form-control" name="TwoHourSerIns" placeholder="4.12" required>
+                        <div class="invalid-feedback">No valido!</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="custom-control">BMI</label>
+                        <input type="number" step="0.001" id="customControlValidation4" class="form-control" name="BMI" placeholder="4.12" required>
+                        <div class="invalid-feedback">No valido!</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="custom-control">DiPedFunc</label>
+                        <input type="number" step="0.001" id="customControlValidation4" class="form-control" name="DiPedFunc" placeholder="4.12" required>
+                        <div class="invalid-feedback">No valido!</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="custom-control">Age</label>
+                        <input type="number" step="0.001" id="customControlValidation4" class="form-control" name="Age" placeholder="4.12" required>
+                        <div class="invalid-feedback">No valido!</div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+                <br>
+                <span id="respuesta">
+    
+                </span>
+            </div>
+        </div>
+    </div>
+<script>
+var formulario = document.getElementById('formulario');
+var respuesta = document.getElementById('respuesta')
+
+formulario.addEventListener('submit', function(e){
+    e.preventDefault();
+    console.log('me diste un click')
+
+    var datos = new FormData(formulario)
+    var envio = [];
+    envio.push(parseFloat(datos.get('NumTimesPrg')))
+    envio.push(parseFloat(datos.get('PlGlcConc')))
+    envio.push(parseFloat(datos.get('BloodP'))) 
+    envio.push(parseFloat(datos.get('SkinThick')))
+    envio.push(parseFloat(datos.get('TwoHourSerIns')))
+    envio.push(parseFloat(datos.get('BMI')))
+    envio.push(parseFloat(datos.get('DiPedFunc')))
+    envio.push(parseFloat(datos.get('Age')))
+   
+    var code = JSON.stringify({
+    'NumTimesPrg': envio[0],
+    "PlGlcConc": envio[1],
+    "BloodP": envio[2],
+    "SkinThick": envio[3],
+    "TwoHourSerIns": envio[4],
+    "BMI": envio[5],
+    "DiPedFunc": envio[6],
+    "Age": envio[7]
+    })
+    console.log(code)
+
+    fetch('http://127.0.0.1:5000/predict',{
+        method: 'POST',
+        body: code
+    }).then(res => res.json())
+      .then( data => {
+        console.log(data)
+        if(data.diabetes == 0){
+            respuesta.innerHTML = `
+            <div class="alert alert-primary" role="alert">
+                I dont have diabetes
+            </div>
+            `
+        }else{
+            respuesta.innerHTML = `
+            <div class="alert alert-danger" role="alert">
+                I have diabetes
+            </div>
+            `
+        }
+        
+      })
+      .catch(function(err) {
+        console.log('Fetch Error :-S', err);
+    });
+})
+</script>
+</body>
+</html>
