@@ -3,6 +3,15 @@ Poryecto de Data Science con Machine Learning con:
 *numpy
 *Matplotlib
 *scikit-learn
+	-LogisticRegression
+	-KNeighborsClassifier
+ 	-GaussianNB
+	-SVC
+	-LinearSVC
+	-RandomForestClassifier
+	-DecisionTreeRegressor
+*Backend: Flask
+*Frontend: Vanilla Javascript
 
 http://queirozf.com/entries/pandas-dataframe-plot-examples-with-matplotlib-pyplot
 
@@ -17,6 +26,8 @@ kaggle -> repo dataset
 https://www.andreagrandi.it/2018/04/14/machine-learning-pima-indians-diabetes/ -> Dataset
 
 https://machinelearningmastery.com/save-load-machine-learning-models-python-scikit-learn/
+
+Arquitectura API:
 
 { "NumTimesPrg": 1,
     "PlGlcConc": 85,
