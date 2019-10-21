@@ -13,7 +13,8 @@ https://towardsdatascience.com/a-guide-to-pandas-and-matplotlib-for-data-explora
 
 https://archive.ics.uci.edu/ml/dataset/ --> repo
 kaggle -> repo dataset
-https://www.andreagrandi.it/2018/04/14/machine-learning-pima-indians-diabetes/
+
+https://www.andreagrandi.it/2018/04/14/machine-learning-pima-indians-diabetes/ -> Dataset
 
 https://machinelearningmastery.com/save-load-machine-learning-models-python-scikit-learn/
 
