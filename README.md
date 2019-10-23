@@ -16,7 +16,7 @@
 # Diabetes_ML
 Bulding model with data set pima-indians-diabetes
 
-## Dependencias
+## Outbuildings
     1. pandas
     2. numpy
     3. Matplotlib
@@ -40,7 +40,7 @@ git clone https://github.com/AlfonsoBallesteros/Diabetes_ML.git
 ## Usage
 
 ```sh
-python app.py
+python diabetes_predictor.py
 open index.html
 ```
 
@@ -102,8 +102,8 @@ Give a ⭐️ if this project helped you!
 Copyright © 2019 [Alfonso Ballesteros](https://github.com/AlfonsoBallesteros).<br />
 This project is [MIT](https://github.com/AlfonsoBallesteros/Diabetes_ML/blob/master/LICENSE) licensed.
 
-## Expresiones de Gratitud 🎁
+## Expressions of Gratitude 🎁
 
-* Comenta a otros sobre este proyecto 📢
-* Invita una cerveza 🍺 a alguien del equipo. 
-* Da las gracias públicamente 🤓.
+* Tell others about this project 📢
+* Invite a beer 🍺 to someone on the team.
+* You give the thanks publicly 🤓.
