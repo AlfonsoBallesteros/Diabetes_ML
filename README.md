@@ -5,6 +5,8 @@
   <img alt="Language" src="https://img.shields.io/github/languages/top/AlfonsoBallesteros/Diabetes_ML" />
   <img alt="issues" src="https://img.shields.io/github/issues/AlfonsoBallesteros/Diabetes_ML" />
   <img alt="issues" src="https://img.shields.io/github/last-commit/AlfonsoBallesteros/Diabetes_ML" />
+  <img alt="wathers" src=" https://img.shields.io/github/watchers/AlfonsoBallesteros/Diabetes_ML?style=social" />
+  <img alt="stars" src=" https://img.shields.io/github/stars/AlfonsoBallesteros/Diabetes_ML?style=social" />
   <a href="https://github.com/AlfonsoBallesteros/Diabetes_ML/blob/master/LICENSE" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
