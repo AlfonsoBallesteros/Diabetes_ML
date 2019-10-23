@@ -101,3 +101,9 @@ Give a ⭐️ if this project helped you!
 
 Copyright © 2019 [Alfonso Ballesteros](https://github.com/AlfonsoBallesteros).<br />
 This project is [MIT](https://github.com/AlfonsoBallesteros/Diabetes_ML/blob/master/LICENSE) licensed.
+
+## Expresiones de Gratitud 🎁
+
+* Comenta a otros sobre este proyecto 📢
+* Invita una cerveza 🍺 a alguien del equipo. 
+* Da las gracias públicamente 🤓.
