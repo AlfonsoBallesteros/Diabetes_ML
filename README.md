@@ -28,7 +28,34 @@ pip install
 ```sh
 python app.py
 ```
+## Prerequisite
+    1. pandas
+    2. numpy
+    3. Matplotlib
+    4. scikit-learn
+        1. LogisticRegression
+        2. KNeighborsClassifier
+        3. GaussianNB
+        4. SVC
+        5. LinearSVC
+        6. RandomForestClassifier
+        7. DecisionTreeRegressor
+    5. Backend: Flask
+    6. Frontend: Vanilla Javascript
 
+## Arquitectura API
+
+```json
+{ "NumTimesPrg": 1,
+    "PlGlcConc": 85,
+    "BloodP": 66,
+    "SkinThick": 29,
+    "TwoHourSerIns": 0,
+    "BMI": 26.6,
+    "DiPedFunc": 0.351,
+    "Age": 31
+}
+```
 ## Author
 
 👤 **Alfonso Ballesteros**
