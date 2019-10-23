@@ -13,9 +13,23 @@
   </a>
 </p>
 
-> Bulding model with data set pima-indians-diabetes
+# Diabetes_ML
+Bulding model with data set pima-indians-diabetes
 
-### ✨ [Demo](https://github.com/AlfonsoBallesteros/Diabetes_ML)
+## Prerequisite
+    1. pandas
+    2. numpy
+    3. Matplotlib
+    4. scikit-learn
+        4.1. LogisticRegression
+        4.2. KNeighborsClassifier
+        4.3. GaussianNB
+        4.4. SVC
+        4.5. LinearSVC
+        4.6. RandomForestClassifier
+        4.7. DecisionTreeRegressor
+    5. Backend: Flask
+    6. Frontend: Vanilla Javascript
 
 ## Install
 
@@ -28,22 +42,33 @@ pip install
 ```sh
 python app.py
 ```
-## Prerequisite
-    1. pandas
-    2. numpy
-    3. Matplotlib
-    4. scikit-learn
-        1. LogisticRegression
-        2. KNeighborsClassifier
-        3. GaussianNB
-        4. SVC
-        5. LinearSVC
-        6. RandomForestClassifier
-        7. DecisionTreeRegressor
-    5. Backend: Flask
-    6. Frontend: Vanilla Javascript
 
-## Arquitectura API
+## Architecture Proyect
+
+```sh
+.
+├── Backend
+├── Builder
+│   └── diabetes_predictor.ipynb
+├── Dataset
+│   ├── datos.csv
+│   └── pima-indians-diabetes.csv
+├── diabetes_predictor.py
+├── Frontend
+│   └── index.html
+├── LICENSE
+├── Models
+│   ├── diabetes.model
+│   └── scaler.scaler
+├── README.md
+├── readme.txt
+└── Training
+    ├── DataFrame.ipynb
+    ├── diabetes_model_builder.ipynb
+    └── output.png
+```
+
+## Architecture API
 
 ```json
 { "NumTimesPrg": 1,
@@ -75,6 +100,3 @@ Give a ⭐️ if this project helped you!
 
 Copyright © 2019 [Alfonso Ballesteros](https://github.com/AlfonsoBallesteros).<br />
 This project is [MIT](https://github.com/AlfonsoBallesteros/Diabetes_ML/blob/master/LICENSE) licensed.
-
-***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
