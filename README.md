@@ -16,7 +16,7 @@
 # Diabetes_ML
 Bulding model with data set pima-indians-diabetes
 
-## Prerequisite
+## Dependencias
     1. pandas
     2. numpy
     3. Matplotlib
@@ -34,13 +34,14 @@ Bulding model with data set pima-indians-diabetes
 ## Install
 
 ```sh
-pip install
+git clone https://github.com/AlfonsoBallesteros/Diabetes_ML.git
 ```
 
 ## Usage
 
 ```sh
 python app.py
+open index.html
 ```
 
 ## Architecture Proyect
